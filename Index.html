@@ -21,7 +21,28 @@
     <title>My Portfolio</title>
 </head>
 <body>
+  <!--trial sidenav-->
   <nav class="nav-bar">
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="background.png">
+        </div>
+        <a href="#user"><img class="circle" src="mee.png"></a>
+        <a href="#name"><span class="brown-text name">Bienvenida Gunay</span></a>
+      </div></li>
+      <div class="divider"></div>
+      <li><a class="subheader brown-text">Connect with me</a></li>
+      <li><a class="social-icon" href="https://www.facebook.com/biengunay" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a class="social-icon" href="https://www.linkedin.com/in/bienvenida-gunay/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a class="social-icon" href="https://www.instagram.com/biengunay/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a class="social-icon" href="biengunay@gmail.com" target="_blank">
+          <ion-icon name="mail-outline"></ion-icon>    
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <div class="nav-wrapper brown lighten-2">
       <a href="#" class="brand-logo center white-text accent-1">Your VA ALLY</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -35,6 +56,8 @@
             <ion-icon name="mail-outline"></ion-icon>  
       </ul>        
   </nav> 
+
+
   <ul class="sidenav" id="mobile-demo">
     <li><a class="social-icon" href="https://www.facebook.com/biengunay" target="_blank">
       <ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -239,6 +262,13 @@
     flex: 1 0 auto;
   }
     
+   </script>
+
+   <script>
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+      
    </script>
 
 </body> 
